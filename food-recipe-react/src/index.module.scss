@@ -1,0 +1,23 @@
+.meal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 65px;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 55px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #a99d9d;
+        text-align: center;
+        margin: 0;
+    }
+}

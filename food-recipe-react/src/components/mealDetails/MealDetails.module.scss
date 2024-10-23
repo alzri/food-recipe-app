@@ -1,0 +1,66 @@
+.meal-details-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+
+    &-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+
+        a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d65108;
+            padding: 8px 40px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: #a84108;
+            }
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+            color: #515151;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #515151;
+        }
+    }
+}
+
+.meal-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.meal-category {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #d65108;
+    margin: 0;
+}

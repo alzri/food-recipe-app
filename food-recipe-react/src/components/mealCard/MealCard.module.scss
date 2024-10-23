@@ -1,0 +1,46 @@
+.meal-card {
+    background-color: #fff;
+    width: 384px;
+    border-radius: 30px;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 175px;
+    }
+
+    &-name {
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 23px;
+        margin: 15px 0 0;
+        text-align: center;
+    }
+
+    &-button {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 15px 0;
+        border: none;
+        border-radius: 15px;
+        background: #d65108;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        width: 175px;
+
+        &:hover {
+            background-color: #a84108;
+            cursor: pointer;
+        }
+    }
+
+    img {
+        width: 384px;
+        height: 384px;
+    }
+}
