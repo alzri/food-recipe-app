@@ -1,26 +1,22 @@
 import React from "react";
 import { MealDetailsProps } from "./MealDetailsProps.types";
+import styles from './MealDetails.module.scss';
 
-const MealDetails: React.FC<MealDetailsProps> = ({meal, closeCard}) => {
+const MealDetails: React.FC<MealDetailsProps> = ({meal}) => {
 
     return (
-        <div className="meal-deetails-card">
-            <h2 className="meal-name">{meal?.strMeal}</h2>
-            <p className="meal-category">{meal?.strCategory}</p>
+        <div className={styles.mealDetailsCard}>
+            <h2 className={styles.mealName}>{meal?.strMeal}</h2>
 
-            <div className="recipe-instruction">
+            <div className={styles.mealDetailsCardTop}>
+                <a className={styles.mealRecipeLink} href={meal?.strYoutube} target="_blank" rel="noopener noreferrer">Watch recipe video</a>
+                <p className={styles.mealCategory}>{meal?.strCategory}</p>
+            </div>
+
+            <div className={styles.mealDetailsCardBottom}>
                 <h3>Instruction:</h3>
                 <p>{meal?.strInstructions}</p>
             </div>
-
-            <div className="recipe-image">
-                <img src={meal?.strMealThumb} alt={meal?.strMeal} />
-            </div>
-
-            <div className="recipe-link">
-                <a href={meal?.strYoutube} target="_blank" rel="noopener noreferrer">Watch recipe video</a>
-            </div>
-            <button className="closeButton" onClick={closeCard}>Close card</button>
         </div>
     )
 };

@@ -9,5 +9,4 @@ export interface Meal {
 
 export interface MealDetailsProps {
     meal: Meal | null;
-    closeCard: () => void;
 }

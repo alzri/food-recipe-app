@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { SearchBarProps } from "./SearchBarProps.types";
+import styles from './SearchBar.module.scss';
 
 const SearchBar: React.FC<SearchBarProps> = ({onSearch}) => {
     const [ searchInput, setSearchInput ] = useState("");
@@ -9,15 +10,16 @@ const SearchBar: React.FC<SearchBarProps> = ({onSearch}) => {
     }
 
     return (
-        <div>
+        <div className={styles.searchSection}>
             <input 
                 type="text"
-                className="search-input"
+                className={styles.searchInput}
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
+                placeholder="Enter an ingredient"
             />
 
-            <button className="search-btn" onClick={handleSearch}>Search</button>
+            <button className={styles.searchButton} onClick={handleSearch}>Search</button>
         </div>
     )
 };
